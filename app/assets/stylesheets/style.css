@@ -29,7 +29,6 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 html{
-	background: url(../images/light-bg.png);
 }
 body{
 	font-family: 'Istok Web', sans-serif;
@@ -128,7 +127,6 @@ body{
 .hr{
 	height: 2px;
 	margin: 20px 0;
-	background: url('../images/div.png') repeat-x;
 }
 /*--grids--*/
 .grids{
@@ -494,7 +492,6 @@ body{
     padding:5px;
 }
 .feedbackFromUser{
-    background-image: url("background.png");
     background-repeat: no-repeat;
     width: 80%;
     height: 48%;
@@ -507,7 +504,6 @@ body{
 
 }
 .main_menu{
-    background-image: url("menu.png");
     background-repeat: no-repeat;
     height: 620px;
     width: 50%;
@@ -518,7 +514,6 @@ body{
     padding-right: 15%;
 }
 .body_header{
-    background:url("body_background.png") repeat-x;
     /*height: 70px;*/
     color: khaki;
 }
@@ -528,7 +523,6 @@ body{
 }
 
 .menu_button{
-    background-image: url("button.png");
     background-repeat: no-repeat;
     width: 275px;
     height: 39px;
