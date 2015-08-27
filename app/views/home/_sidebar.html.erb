@@ -1,0 +1,38 @@
+<script type="text/javascript">
+
+    $(function(){
+        $('#_sidebar').slimScroll({
+            height: "400px"
+        })
+    });
+
+</script>
+<div class="boxes">
+  <div >
+    <ul>
+      <li style="width: 100%"><a target="_blank" href="http://kampuskornerlamar.com/">
+        <%= image_tag "order_now.png"%>
+      </a> </li>
+    </ul>
+  </div>
+  <div class="clear"> </div>
+  <p style="
+  background: none;
+          font-size: medium;
+          font-family: cursive;
+          font-style: italic;
+          color: floralwhite;
+  ">What people says about us!</p>
+  <div id= "_sidebar" style="  overflow-x: hidden;">
+    <% all_feedback.each do |option| %>
+        <div class="feedbackFromUser">
+          <div id= "_feedback" style="height: 73%;width: 95%;overflow: hidden" >
+            <p style="padding-bottom: 2%">
+              <span ><%= option.name %></span>
+            </p>
+            <p><%= option.improvement %></p>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>

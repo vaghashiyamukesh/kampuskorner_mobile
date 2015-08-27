@@ -1,0 +1,56 @@
+<div class="main-body">
+  <div id="slider">
+    <a href="#" target="_blank">
+      <%= image_tag "slider-1.jpg"%>
+
+    </a>
+    <a href="#" target="_blank">
+      <%= image_tag "slider-2.jpg"%>
+
+    </a>
+    <a href="#" target="_blank">
+      <%= image_tag "slider-3.jpg"%>
+
+    </a>
+  </div>
+  <div class="clear"> </div>
+  <div >
+    <ul>
+      <li style="width: 50%;float: right"><a target="_blank" href="http://kampuskornerlamar.com/">
+        <%= image_tag "order_now.png"%>
+      </a> </li>
+    </ul>
+  </div>
+  <div class="home_content">
+    <div style="font-size: xx-large;
+            padding-bottom: 3%;">
+      <p >
+        Welcome to Kampus Korner Restaurant!</p>
+      <p style="
+      text-align: center;
+              color: floralwhite;
+              font-size: x-large;
+      "> <% all_special.each do |spe| %>
+            <%= spe.title%>
+        <%end %></p>
+
+
+    </div>
+    <p style="font-size: initial; padding-bottom: 2%">
+      Located in the hub of  Lamar University, you will feel right at home with the different seating areas and the comfortable couches, grouped for gatherings with friends.
+      Kampus provides a pleasant place  to eat, study, or just take a deep breath and relax. But the Korner is not just for collegians.
+      Equally at home are Lamar employees stopping in for breakfast and refinery workers seeking the refuge of a cold beer after a long, hot day.
+    </p>
+    <p style="font-size: initial;">
+      Breakfast starts at 9 a.m.
+      featuring the perfect omelet or eggs cooked just the way you like them with all the trimmings.
+      The pancakes are very popular. The breakfast sandwiches are filling and offer lots of protein and carbs before you hit the gym.
+      Kampus Korner has great coffee and plent of it if you are cramming for an exam.
+    </p>
+  </div>
+
+  <div class="clear"> </div>
+</div>
+
+
+

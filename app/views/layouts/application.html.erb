@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KampuskornerMobile</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <%= stylesheet_link_tag 'style' %>
+  <%= stylesheet_link_tag 'baskerville' %>
+  <%= stylesheet_link_tag 'slider-styles' %>
+  <%= javascript_include_tag 'jquery.min' %>
+  <%= javascript_include_tag 'slider' %>
+  <%= javascript_include_tag 'jquery-ui.min' %>
+  <%= javascript_include_tag 'jquery.slimscroll.min' %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <meta name="keywords" content="Food-Point Iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+</head>
+<body>
+
+<!--<div class="body_header" >-->
+  <!--<div class="top-head">-->
+    <!--<div class="welcome">Welcome To <span>Kampus Korner</span></div>-->
+    <!--<div class="clear"> </div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<div class="body_main">
+  <div class="wrap">
+    <%= render 'home/header' %>
+    <%= yield %>
+  </div>
+
+<%= render 'home/footer'%>
+
+
+<script>
+    $('#slider').coinslider();
+</script>
+
+</div>
+</body>
+</html>

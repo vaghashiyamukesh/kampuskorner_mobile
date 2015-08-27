@@ -1,0 +1,39 @@
+
+<div class="main-body">
+  <% @category.each do |x| %>
+
+      <div id="cat_<%= x.id%>" style="
+      text-align: center;
+              background-color: brown;
+              font-family: cursive;
+              font-size: x-large;
+              color: khaki;cursor: pointer;
+      ">
+        <%= x.name%>
+      </div>
+      <div id="menu_<%= x.id%>" style="
+              font-family: cursive;
+              font-size: medium;
+      ">
+        <% @menu.where("category_id"=> x.id).each do |y| %>
+            <p style="height: 30px; background-color: bisque"><span style="float: left"><%=y.title %></span><span style="float:
+                    right">$<%= y.rate%></h2></span></p>
+        <%end%>
+      </div>
+
+  <% end%>
+
+  <div class="clear"> </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        <% @category.each do |x| %>
+        $("#cat_<%=x.id%>").click(function () {
+            $("#menu_<%=x.id%>").toggle("normal");
+        });
+        $("#menu_<%=x.id%>").toggle();
+        <%end%>
+
+    });
+</script>
