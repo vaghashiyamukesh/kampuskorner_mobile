@@ -518,7 +518,7 @@ body{
     color: khaki;
 }
 .body_main{
-    background:url("background.png");
+    background-color: darkred;
 }
 
 .menu_button{
