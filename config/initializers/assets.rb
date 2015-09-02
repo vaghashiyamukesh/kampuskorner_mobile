@@ -6,7 +6,6 @@ Rails.application.config.assets.precompile += %w(style.css)
 Rails.application.config.assets.precompile += %w(slider-styles.css)
 Rails.application.config.assets.precompile += %w(baskerville.css)
 Rails.application.config.assets.precompile += %w(slider.js)
-Rails.application.config.assets.precompile += %w(jquery.min.js )
 Rails.application.config.assets.precompile += %w(jquery-ui.min.js )
 Rails.application.config.assets.precompile += %w(jquery.slimscroll.min.js )
 
