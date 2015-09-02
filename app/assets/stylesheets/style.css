@@ -518,8 +518,7 @@ body{
     color: khaki;
 }
 .body_main{
-    background:url("abc.jpg");
-    margin-top: -4%;
+    /*background:url("abc.jpg");*/
 }
 
 .menu_button{
