@@ -16,7 +16,7 @@
               font-size: medium;
       ">
         <% @menu.where("category_id"=> x.id).each do |y| %>
-            <p style="height: 30px; background-color: bisque"><span style="float: left; width: 95%"><%=y.title %></span><span style="float:
+            <p style="height: 30px; background-color: bisque"><span style="float: left; width: 90%"><%=y.title %></span><span style="float:
                     right">$<%= y.rate%></h2></span></p>
         <%end%>
       </div>
